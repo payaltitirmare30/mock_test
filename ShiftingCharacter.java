@@ -17,7 +17,8 @@ public class ShiftingCharacter {
 		
 		// Call the shiftLowercaseLeft method
 		String shiftedText = shiftLowercaseLeft(originalText);
-		
+
+		//printing the string after shifting 
 		System.out.println("Shifted String :"+ shiftedText);
 	}
 	
@@ -40,7 +41,7 @@ public class ShiftingCharacter {
 				
 				chars[i] = (char) (chars[i] - 3);		
 				
-				 // If it goes below a wrap it around by adding 26
+				 // If it goes below 'a' wrap it around by adding 26
 				if (chars[i] < 'a') {
 					chars[i] = (char) (chars[i] + 26);
 				}
