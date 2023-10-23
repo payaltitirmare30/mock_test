@@ -15,14 +15,14 @@ public class ShiftingCharacter {
 		System.out.println("Enter a String : ");
 		String originalText = sc.next();
 		
-		// Call the shiftLowercaseLeft method
-		String shiftedText = shiftLowercaseLeft(originalText);
+		// Call the shiftCharacter method
+		String shiftedText = shiftCharacters(originalText);
 
 		//printing the string after shifting 
 		System.out.println("Shifted String :"+ shiftedText);
 	}
 	
-	public static String shiftLowercaseLeft(String input) {
+	public static String shiftCharacters(String input) {
 		// Convert the input string to a character array
 		char[] chars = input.toCharArray();
 		
